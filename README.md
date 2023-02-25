@@ -13,3 +13,9 @@ pandoc -f gfm+tex_math_dollars --mathjax -s -t html5 -i README.md -o index.html
 ```
 
 That HTML will be available at https://fasiha.github.io/mathjax-pandoc-accessibility
+
+We can also convert this to MathML instead of MathJax:
+```sh
+pandoc -f gfm+tex_math_dollars --mathml -s -t html5 -i README.md -o index-mathml.html
+```
+See that: https://fasiha.github.io/mathjax-pandoc-accessibility/index-mathml.html
